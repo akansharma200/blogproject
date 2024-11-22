@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+}
+
+
+.pagestart{
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.overlay-content{
+    width: 70vw;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    
+}
+
+
+
+.ovupper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.ovupper h1{
+    letter-spacing: 4px;
+}
+
+.crossbtn i{
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.ovbottom{
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.ovbottom p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ovbottom input {
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.ovbottom button {
+    width: 100%;
+    background-color: #f54336;
+    color: white;
+    padding: 10px 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.mainOverlay{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.logos{
+    color: #fff;
+}
+
+.logos ul{
+    padding-left: 10px;
+    gap: 30px;
+    display: flex;
+}
+
+.logos ul li{
+    color: #fff;
+    list-style: none;
+}
+
+.logos ul li a{
+    color: #fff;
+}
+
+.search{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.jane-info{
+    width: 100%;
+    /* border: 4px solid red; */
+}
+
+.welcome{
+    padding: 10px;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.welcome h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.welcome h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.welcome span{
+    background-color: black;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.i-jane{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.jane-img img{
+    width: 100%;
+}
+
+.n-jane{
+    color: #fff;
+    position: absolute;
+    font-family: "Oswald";
+    margin-left: 20px;
+}
+
+.n-jane h1{
+    
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.n-jane h2{
+    font-size: 64px;
+    letter-spacing: 2px;
+}
+
+.n-jane button{
+    font-size: 18px;
+    font-weight: 550;
+    padding:  16px 20px;
+}
+
+.main-part{
+    background-color: #f2f2f2;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 18px;
+    /* border: 2px solid saddlebrown; */
+}
+
+.middle-part{
+    /* border: 2px solid red; */
+    background-color: #f2f2f2;
+    width: 62%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* padding: 40px 0; */
+}
+
+.middle-part .title-head{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 20px;
+    /* border: 2px solid red; */
+}
+
+.title-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#title{
+    font-weight: 400;
+}
+
+.title-part img{
+    width: 100%;
+}
+
+.title-part p{
+    text-align: justify;
+}
+
+.middle-part h3{
+    font-weight: 600;
+}
+
+.title-head span{
+    color: #666666;
+}
+
+.hideElement{
+    display: none !important;
+}
+
+.replybuttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.replybuttons button{
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.replybuttons button i{
+    padding-right: 5px;
+}
+
+
+
+.replybuttons #reply{
+    background-color: black;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+#replyContent{
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #666666;
+}
+
+button {
+  cursor: pointer;
+}
+
+.replybuttons span{
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.last-title{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.last-title img{
+    height: 100px;
+}
+
+.lgeorge{
+    padding-top: 13px;
+}
+
+.lgeorge span{
+     font-size: 20px;
+     font-weight: 500;
+     color: black;
+}
+
+.lgeorge h2{
+    font-size: 16px;
+    color:#6b6b6b;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.lgeorge h3{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.title-2{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 20px;
+    margin-top: 40px;
+    /* border: 2px solid red; */
+}
+
+.title-2 span{
+    color: #666666;
+}
+
+.title-3{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 20px;
+    margin-top: 40px;
+    /* border: 2px solid red; */
+}
+
+.title-3 span{
+    color: #666666;
+}
+
+.reply-all .last-title{
+    margin-bottom: 20px;
+}
+
+.reply-all span{
+    color: black;
+}
+
+.replybuttons #reply:hover{
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.replybuttons .liked{
+    display: none;
+}
+
+.side-part{
+    width: 32%;
+    /* border: 2px solid green; */
+}
+
+.my-name{
+    width: 100%;
+    background-color: black;
+}
+
+
+.my-name img{
+    width: 100%;
+}
+
+.my-name h3{
+    padding: 20px 10px;
+    color: #fff;
+}
+
+.my-name p{
+    padding: 0 10px 10px 10px;
+    color: #fff;
+}
+
+.p-posts{
+    /* border: 2px solid purple; */
+    background-color: #ffffff;
+}
+
+.p-posts h2{
+    padding: 20px;
+    margin-top: 30px;
+    /* border: 2px solid red; */
+    background-color: black;
+    color: #fff;
+    font-weight: 400;
+}
+
+.p-posts img{
+    height: 65px;
+    width: 55px;
+}
+
+.all-posts{
+    display: flex;
+    padding: 10px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.all-posts:hover{
+    background-color: #f1f1f1;
+}
+
+.all-posts-ap{
+    display: flex;
+    font-family: "Segoe UI",Arial,sans-serif;
+    padding: 10px 10px 10px 10px;
+    border-bottom: none;
+}
+
+.all-posts-ap:hover{
+    background-color: #f1f1f1;
+}
+.simg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.simg h3{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.simg p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.advertise h3{
+    padding: 20px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+}
+
+.advertise{
+    background-color: #ffffff;
+    margin-top: 30px;
+    height: 45vh;
+}
+
+ .add{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    height: 80%;
+}
+
+.addcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.add span{
+    background-color: #f2f2f2;
+    font-family: "Open Sans";
+}
+
+.tags{
+    /* width: 100%; */
+    background-color: white;
+    margin-top: 40px;
+    height: 38vh;
+}
+
+.tags h3{
+    padding: 20px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+
+.all-tags{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 10px;
+    gap: 30px;
+   /* padding-left: 10px;
+   padding-right: 10px; */
+    /* height: 80%; */
+}
+
+.all-tags span{
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 4px 10px;
+    gap: 20px;
+}
+
+.all-tags #fashion{
+    background-color: black;
+    color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+}
+
+.inspiration{
+    background-color: white;
+    margin-top: 30px;
+    width: 100%;
+    padding-bottom: 10px;
+    /* height: 38vh; */
+}
+
+.inspiration h3{
+    padding: 20px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+
+.insp-imgs .firstPart{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.insp-imgs .secPart{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.insp-imgs img{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 180px;
+    height: 120px;
+}
+
+.follow{
+    background-color: white;
+    margin-top: 30px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.follow h3{
+    padding: 20px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+
+.con-icons .allIcons{
+     color: black;
+}
+
+.allIcons ul{
+    padding-left: 10px;
+    padding-top: 10px;
+    gap: 20px;
+    display: flex;
+}
+
+.allIcons ul li{
+    color: black;
+    list-style: none;
+}
+
+.allIcons ul li a{
+    color: black;
+}
+
+.subscribe{
+    background-color: white;
+    margin-top: 30px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.subscribe h3{
+    padding: 20px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+
+.subs-div{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.subs-div p {
+    font-size: 16px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+
+.subs-div input {
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.subs-div button {
+    width: 100%;
+    background-color: #f54336;
+    color: white;
+    padding: 10px 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.subs-div button:hover{
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.lastBox{
+    background-color: #616161;
+    color: #fff;
+    padding: 70px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    gap: 20px;
+}
+
+.top-column{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: #fff;
+    width: 12%;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lastBox .p-link span{
+    text-decoration: underline;
+}
+
+.lastBox .top-column:hover{
+     background-color: #f2f2f2;
+     color: black;
+}

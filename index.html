@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog Page</title>
+</head>
+<body>
+
+   <div class="f-page">
+        <div class="pagestart">
+        <div class="logos">
+           <ul>
+               <li>
+                   <a href="#">
+                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="15" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="15" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="15" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                   </a>
+               </li>
+           </ul>
+        </div>
+        <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+
+        <div class="jane-info">
+         <div class="welcome">
+            <h2> JANE BLOGLIFE </h2>
+            <h3> Welcome to the blog of <span> Jane's World </span></h3>
+         </div>
+        </div>
+
+        <div class="i-jane">
+        <div class="jane-img">
+            <img src="./images of blog/jane (1).jpg" alt="janes-img">
+        </div>
+        <div class="n-jane">
+            <h1> Jane's</h1>
+            <h2><b>FASHION BLOG</b></h2>
+            <button onclick="showPopup()"> SUBSCRIBE </button>
+        </div>
+
+        <div class="overlay-content" id="soverlay">
+            <div class="mainOverlay">
+                <div class="ovupper">
+                    <h1>SUBSCRIBE</h1>
+                   <div class="crossbtn">
+                    <i onclick="hidePopup()" class="fa-solid fa-xmark"></i>
+                   </div>
+                </div>
+               <div class="ovbottom">
+                <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                <input type="email" placeholder="Enter E-Mail">
+                <button>Subscribe</button>
+               </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="main-part">
+         <div class="middle-part"> 
+             <div class="title-head">
+              <div class="title-part">
+                <h2 id="title">TITLE HEADING</h2>
+                <h3>Title description,<span>May 2, 2016</span></h3>
+                <img src="./images of blog/girl_hat.jpg" alt="hat-girl">
+                <p><b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                <br>
+                <br>
+                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              </div>
+                
+                <div class="replybuttons">
+                    <button class="like" id="like1" onclick="likeBtn()"><i class="fa-solid fa-thumbs-up"></i><b>Like</b></button>
+                    <button class="liked" id="hideLike" ><i class="fa-solid fa-check"></i></i><b>Liked</b></button>
+                    <button id="reply" onclick="hideReplies()"><b>Replies <span>1</span></b></button>
+                </div>
+                <div class="reply-all">
+                    <div class="last-title" id="replyContent">
+                        <img src="./images of blog/avatar_smoke.jpg" alt="smoke-man">
+                        <div class="lgeorge">
+                            <h2><span>George</span> May 3, 2015, 6:32 PM </h2>
+                            <h3>Great blog post! Following</h3>
+                        </div>
+                    </div>
+                </div>
+             </div>
+    
+            <div class="title-2">
+                 <div class="title-part">
+                     <h2 id="title">TITLE HEADING</h2>
+                     <h3>Title description,<span>April 23, 2016</span></h3>
+                     <img src="./images of blog/man_hat.jpg" alt="hat-man">
+                     <p><b>Hats!</b> The trend this summer is hats for men!
+                        <br>
+                        <br>
+                        Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                 </div>
+                    
+                    <div class="replybuttons">
+                        <button class="like" id="like2" onclick="likeBtn1()"><i class="fa-solid fa-thumbs-up"></i><b>Like</b></button>
+                        <button class="liked" id="hideLike1"><i class="fa-solid fa-check"></i></i><b>Liked</b></button>
+                        <button id="reply" onclick="anotherHide()"><b>Replies <span>2</span></b></button>
+                    </div>
+                    <div class="reply-all" id="replyHide">
+                        <div class="last-title" id="replyContent">
+                            <img src="./images of blog/girl_train.jpg" alt="girl-train">
+                            <div class="lgeorge">
+                                <h2><span>Amber</span> April 26, 2015, 10:52 PM </h2>
+                                <h3>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                            </div>
+                        </div>
+    
+                        <div class="last-title" id="replyContent">
+                            <img src="./images of blog/girl_ocean.jpg" alt="girl-ocean">
+                            <div class="lgeorge">
+                                <h2><span>Angie </span> April 23, 2015, 9:12 PM </h2>
+                                <h3>Love hats!!</h3>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+             
+
+            <div class="title-3">
+                <div class="title-part">
+                    <h2 id="title">TITLE HEADING</h2>
+                    <h3>Title description,<span> April 7, 2016</span></h3>
+                    <img src="./images of blog/runway.jpg" alt="run-way">
+                    <p><b>Dont miss!</b> The runway in New York City this weekend is gonna be legendary!
+                       <br>
+                       <br>
+                       Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+                   
+                   <div class="replybuttons">
+                    <button class="like" id="like3" onclick="likeBtn2()"><i class="fa-solid fa-thumbs-up"></i><b>Like</b></button>
+                       <button class="liked" id="hideLike2"><i class="fa-solid fa-check"></i></i><b>Liked</b></button>
+                       <button id="reply" onclick="oneMore()"><b>Replies <span>3</span></b></button>
+                   </div>
+                   <div class="reply-all" id="moreHide">
+                       <div class="last-title" id="replyContent">
+                           <img src="./images of blog/girl_mountain.jpg" alt="girl-train">
+                           <div class="lgeorge">
+                               <h2><span>Jane</span> April 10, 2015, 7:22 PM </h2>
+                               <h3>That was a great runway show! Thanks for everything.</h3>
+                           </div>
+                       </div>
+   
+                       <div class="last-title" id="replyContent">
+                           <img src="./images of blog/boy-soul.jpg" alt="girl-ocean">
+                           <div class="lgeorge">
+                               <h2><span>John </span> April 8, 2015, 10:32 PM </h2>
+                               <h3>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
+                           </div>
+                       </div>
+
+                       <div class="last-title" id="replyContent">
+                        <img src="./images of blog/girl_hood.jpg" alt="girl-ocean">
+                        <div class="lgeorge">
+                            <h2><span>Anja </span> April 7, 2015, 9:12 PM </h2>
+                            <h3>Cant wait for the runway to start!</h3>
+                        </div>
+                    </div>
+                   </div>
+           </div>
+         </div> 
+    
+    
+    
+          <div class="side-part">
+               <div class="my-name">
+                <img src="./images of blog/avatar_girl2.jpg" alt="avgirl">
+                <div class="introDiv">
+                    <h3>My Name</h3>
+                    <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum   and mauris neque quam blog. I want to share my world with you.</p>
+                </div>
+               </div>
+           
+               <div class="p-posts">
+              <h2>Popular Posts</h2>
+              <div class="all-posts">
+                  <img src="./images of blog/avatar_smoke.jpg" alt="img-a">
+                  <div class="simg">
+                      <h3>Denim</h3>
+                      <p>Sed mattis nunc</p>
+                  </div>
+              </div>
+              <div class="all-posts">
+                  <img src="./images of blog/bandmember.jpg" alt="img-a">
+                  <div class="simg">
+                      <h3>Sweaters</h3>
+                      <p>Praes tinci sed</p>
+                  </div>
+              </div>
+              <div class="all-posts">
+                  <img src="./images of blog/workshop.jpg" alt="img-a">
+                  <div class="simg">
+                      <h3>Workshop</h3>
+                      <p>Ultricies congue</p>
+                  </div>
+              </div>
+              <div class="all-posts-ap">
+                  <img src="./images of blog/avatar_smoker.jpg" alt="img-a">
+                  <div class="simg">
+                      <h3>Trends</h3>
+                      <p>Lorem ipsum dipsum</p>
+                  </div>
+              </div>
+               </div>
+    
+               <div class="advertise">
+              <h3>Advertise</h3>
+              <div class="addcontainer">
+                  <div class="add">
+                      <span>Your AD Here</span>
+                  </div>
+              </div>
+               </div>
+
+               <div class="tags">
+                 <h3>Tags</h3>
+                  <div class="all-tags">
+                     <div class="all-tags-1">
+                        <span id="fashion">Fashion</span>
+                        <span>New York</span>
+                        <span>London</span>
+                        <span>Hats</span>
+                        <span>Norway</span>
+                     </div>    
+                     <div class="all-tags-2">
+                         <span>Sweaters</span>
+                         <span>Ideas</span>
+                         <span>Deals</span>
+                         <span>Accessories</span>
+                         <span>News</span>
+                     </div>
+                     <div class="all-tags-3">
+                         <span>Clothing</span>
+                         <span>Shopping</span>
+                         <span>Jeans</span>
+                         <span>Trends</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="inspiration">
+                  <h3>Inspiration</h3>
+                  <div class="insp-imgs">
+                    <div class="firstPart">
+                        <img src="./images of blog/jeans.jpg" alt="avgirl">
+                        <img src="./images of blog/hat_girl.jpg" alt="avgirl">
+                    </div>
+
+                    <div class="secPart">
+                        <img src="./images of blog/girl_pink.jpg" alt="avgirl">
+                        <img src="./images of blog/african.jpg" alt="avgirl">
+                    </div>
+                  </div>
+               </div>
+
+               <div class="follow">
+                <h3>Follow Me</h3>
+                <div class="con-icons">
+                    <div class="allIcons">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               </div>
+
+               <div class="subscribe">
+                <h3>Subscribe</h3>
+
+                <div class="subs-div">
+                    <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                    <input type="email" placeholder="Enter E-Mail">
+                    <button>Subscribe</button>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="lastBox">
+            <div class="top-column" onclick="scrollToTop()">
+                <i class="fa-solid fa-arrow-up"></i>
+                <span>To the top</span>
+            </div>
+
+            <div class="p-link">
+                <p>Powered by <span>Akansha..</span></p>
+            </div>
+        </div>
+   </div>
+
+   
+
+   
+   <script>
+
+    let showPopup = function() {
+        let btn = document.getElementById('soverlay');
+        btn.style.display = "block";
+    };
+
+    let hidePopup = function() {
+        let btn = document.getElementById('soverlay');
+        btn.style.display = "none";
+    };
+
+    let hideReplies = function(){
+    let btn = document.getElementById('replyContent');
+    btn.classList.toggle('hideElement');
+    console.log(btn.classList);
+    };
+
+    let anotherHide = function(){
+    let btn = document.getElementById('replyHide');
+    btn.classList.toggle('hideElement');
+    console.log(btn.classList);
+    };
+
+    let oneMore = function(){
+    let btn = document.getElementById('moreHide');
+    btn.classList.toggle('hideElement');
+    console.log(btn.classList);
+    };
+
+    let scrollToTop = function(){
+    window.scrollTo(0,0);
+    };
+
+    let likeBtn = function(){
+    let btn = document.getElementById('hideLike');
+    let btn1 = document.getElementById('like1');
+    btn1.style.display = "none";
+    btn.style.display = "block";
+    };
+
+    let likeBtn1 = function(){
+    let btn = document.getElementById('hideLike1');
+    let btn1 = document.getElementById('like2');
+    btn1.style.display = "none";
+    btn.style.display = "block";
+    };
+
+    let likeBtn2 = function(){
+    let btn = document.getElementById('hideLike2');
+    let btn1 = document.getElementById('like3');
+    btn1.style.display = "none";
+    btn.style.display = "block";
+    };
+
+   </script>
+
+</body>
+</html>
